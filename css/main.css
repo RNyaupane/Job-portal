@@ -62,7 +62,7 @@ body{
 /* Modal Search */
 /* header */
 #header{
-    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+    /* background: url(../images/banner-img-1.jpg) top/cover no-repeat; */
 }
 .carousel-inner h1{
     font-size: 60px;
@@ -95,9 +95,25 @@ body{
     top: 215px;
 }
 /* Jobs */
-.job-item,
 .product-cardd{
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -6px 20px 0px inset, rgba(0, 0, 0, 0.1) 0px -29px 20px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 0px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+} 
+.nav-pills .nav-item .active {
+    border-bottom: 2px solid var(--primary);
+}
+
+.job-item {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.job-item:hover {
+    border-color: rgba(0, 0, 0, .08);
+    box-shadow: none;
 }
 
 /* special */
@@ -144,7 +160,14 @@ body{
     background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
     background-size: 5px 5px;
 }
-
+/* Testominals */
+@media(min-width:580px) {
+    /* .carousel-inner{
+        padding-right: 130px;
+         padding-left: 130px;
+    } */
+    
+}
 
 /* newsletter */
 #newsletter{
