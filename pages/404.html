@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex-HUB</title>
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap css -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
@@ -57,7 +57,7 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link text-uppercase text-dark dropdown-toggle"
                                 data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded-3 m-0 border-light text-center">
+                            <div class="dropdown-menu rounded-3 m-0">
                                 <a href="./jobs.html" class="dropdown-item ">Job List</a>
                                 <hr class="dropdown-divider">
                                 <a href="./aShop.html" class="dropdown-item">Product List</a>
@@ -65,7 +65,7 @@
                         </div>
                     </li>
                     <li class="nav-item px-1 py-2">
-                        <a class="nav-link text-uppercase text-dark" href="/aboutUs.html">About</a>
+                        <a class="nav-link text-uppercase text-dark" href="./aboutUs.html">About</a>
                     </li>
                     <li class="nav-item px-1 py-2 d-lg-none">
                         <a class="nav-link text-uppercase text-dark" href="./notification.html">Notification</a>
@@ -74,7 +74,7 @@
                         <a class="nav-link text-uppercase text-dark" href="./blogs.html">blogs</a>
                     </li>
                     <li class="nav-item px-1 py-2 border-0">
-                        <a class="nav-link text-uppercase text-dark" href="./contactUs.html">Contact</a>
+                        <a class="nav-link text-uppercase text-dark" href="#popular">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -95,161 +95,46 @@
                     <form class="d-flex">
                         <input class="form-control me-2 py-2 bg-transparent shadow-none border-none text-white"
                             type="search" placeholder="Search" aria-label="Search">
-                        <button class="border-dark bg-transparent rounded-3" type="submit">
-                            <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
-                        aria-label="Close"></i></button>
+                        <button class="border-none px-3 bg-transparent rounded-3" type="submit">
+                            <i class="fa fa-window-close bg-transparent fs-4 text-white" data-bs-dismiss="modal"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!--Job Detail-->
-    <section class="bg-light">
-        <div class="container pb-5">
-            <div class="row">
-                <div class="col-lg-5 mt-5">
-                    <div class="card mb-3 bg-transparent border-light d-flex align-items-center">
-                        <img class="card-img img-fluid border" src="../images/book1.jpg" alt="Card image cap" id="product-detail" style="height: 330px; width: 350px;">
-                    </div>
-                    <div class="row">
-                        <!--Start Controls-->
-                        <div class="col-1 align-self-center">
-                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
-                                <i class="text-dark fas fa-chevron-left"></i>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </div>
-                        <!--End Controls-->
-                        <!--Start Carousel Wrapper-->
-                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item mt-5" data-bs-ride="carousel">
-                            <!--Start Slides-->
-                            <div class="carousel-inner product-links-wap" role="listbox">
-
-                                <!--First slide-->
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-4 p-1">
-                                            <a href="#">
-                                                <img class="card-img img-fluid border" src="../images/book2.jpg" alt="Product Image 1">
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-1">
-                                            <a href="#">
-                                                <img class="card-img img-fluid border" src="../images/book1.jpg" alt="Product Image 2">
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-1">
-                                            <a href="#">
-                                                <img class="card-img img-fluid border" src="../images/book5.jpg" alt="Product Image 3">
-                                            </a>
-                                        </div>
-                                    </div>
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" >
+                    <img src="../images/about-us.jpg" class="d-block w-100" alt="..." style="height: 700px;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-start mx-3">
+                                <div class="col-lg-6">
+                                    <h1 class="display-1">404</h1>
+                                    <h1 class="mb-4">Page Not Found</h1>
+                                    <p class="mb-5 text-secondary">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                                    <a href="#"
+                                    class=" py-3 px-5 mt-5 rounded-pill text-uppercase text-decoration-none main-btn fs-5 text-white">
+                                    Go Back To Home</a>
                                 </div>
-                                <!--/.First slide-->
-
-                                <!--Second slide-->
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-4 p-1">
-                                            <a href="#">
-                                                <img class="card-img img-fluid border" src="../images/book2.jpg" alt="Product Image 1">
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-1">
-                                            <a href="#">
-                                                <img class="card-img img-fluid border" src="../images/book1.jpg" alt="Product Image 2">
-                                            </a>
-                                        </div>
-                                        <div class="col-4 p-1">
-                                            <a href="#">
-                                                <img class="card-img img-fluid border" src="../images/book5.jpg" alt="Product Image 3">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Second slide-->
                             </div>
-                            <!--End Slides-->
-                        </div>
-                        <!--End Carousel Wrapper-->
-                        <!--Start Controls-->
-                        <div class="col-1 align-self-center">
-                            <a href="#multi-item-example" role="button" data-bs-slide="next">
-                                <i class="text-dark fas fa-chevron-right"></i>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <!--End Controls-->
-                    </div>
-                </div>
-                <!-- col end -->
-                <div class="col-lg-7 mt-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="h2">Book Name</h1>
-                            <p class="h3 py-2">$25.00</p>
-                            <!-- <p class="py-2">
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <span class="list-inline-item text-dark">Rating 4.8 | 36 Comments</span>
-                            </p> -->
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <h6>Category</h6>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p class="text-muted"><strong>book Type</strong></p>
-                                </li>
-                            </ul>
-
-                            <h6>Description:</h6>
-                            <p>It comprehensively covers basic Java concepts such as programming principles, keywords, Java language syntaxes, Java 8 API, JavaBeans, servlets, applets, swing, etc. It is easily available in the market and you can download its PDF version. The book contains 1000+ pages.</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <h6>Author :</h6>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p class="text-muted"><strong>Author Name</strong></p>
-                                </li>
-                            </ul>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <h6>Posted :</h6>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p class="text-muted"><strong>2 days ago</strong></p>
-                                </li>
-                            </ul>
-
-                            <div class="row pb-3 mt-5">
-                                <div class="col d-grid">
-                                    <button type="submit" class="btn btn-success btn-md" name="submit" value="buy">Buy</button>
-                                </div>
-                                <!-- <div class="col d-grid">
-                                    <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Rate the User</button>
-                                </div> -->
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Job Detail End -->
-
+    </header>
+    <!-- end of header -->
 
     <!-- footer -->
-    <footer class="bg-dark py-5">
+    <footer class="bg-dark">
         <div class="container">
             <div class="row text-white g-4">
                 <div class="col-md-6 col-lg-3">
-                    <a class="text-uppercase text-decoration-none brand text-white">Who we are?</a>
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Who we are?</a>
                     <p class="text-white text-muted mt-3 "> ApexHub is where convenience meets career advancement,
                         offering a seamless blend of shopping and job hunting in one platform.</p>
                 </div>
@@ -344,6 +229,8 @@
         </div>
     </footer>
     <!-- end of footer -->
+
+
 
 
     <!-- jquery -->

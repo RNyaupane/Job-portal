@@ -160,13 +160,25 @@ body{
     background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
     background-size: 5px 5px;
 }
+/* Our Teams */
+#team .social{
+    text-align: center;
+}
+#team i{
+    color: var(--green);
+    padding: 10px;
+}
+#team i:hover{
+    background-color: #0000000c;
+    border-radius: 10px;
+    color: rgb(26, 48, 71);
+}
 /* Testominals */
 @media(min-width:580px) {
     /* .carousel-inner{
         padding-right: 130px;
          padding-left: 130px;
     } */
-    
 }
 
 /* newsletter */
@@ -198,6 +210,7 @@ footer .brand{
     font-family: var(--lg-font);
     letter-spacing: 2px;
 }
+
 footer a{
     -webkit-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
@@ -212,4 +225,10 @@ footer a:hover{
     .nav-item{
         border-bottom: none;
     }
+}
+
+/* Book Detail */
+#multi-item-example img{
+    height: 100px;
+    width: 100px;
 }

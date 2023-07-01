@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex-HUB</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div class="container ">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-flex justify-content-between align-items-start order-lg-0" href="../index.html">
+                <img src="../images/shopping-bag-icon.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2 d-none d-sm-block">Apex-HUB</span>
+            </a>
+            <div class="order-lg-2 nav-btns text-end py-3">
+                <button type="button" class="btn position-relative shadow-none" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <i class="fa fa-search fs-4 "></i>
+                </button>
+                <a type="button" class=" text-dark position-relative d-none d-lg-inline shadow-none" href="./notification.html">
+                    <i class="fa fa-bell fs-4 "></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-circle">2</span>
+                </a>
+                <button type="button" class="btn position-relative ">
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0 show" href="./profile.html"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="https://lh3.googleusercontent.com/ogw/AOLn63G1kDp1EeTErP0dkuwBHG__AgdaHXm4jbaON9IPc0M=s32-c-mo"
+                            alt="Profile" class="rounded-circle" height="40px" width="40px">
+                        <span class="d-none d-md-block text-dark ps-2">Roshan Nyaupane</span>
+                    </a>
+                </button>
+
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center ">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-1 py-2">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link text-uppercase text-dark dropdown-toggle"
+                                data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu rounded-3 m-0 border-light text-center">
+                                <a href="./jobs.html" class="dropdown-item ">Job List</a>
+                                <hr class="dropdown-divider">
+                                <a href="./aShop.html" class="dropdown-item">Product List</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item px-1 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="/aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item px-1 py-2 d-lg-none">
+                        <a class="nav-link text-uppercase text-dark" href="./notification.html">Notification</a>
+                    </li>
+                    <li class="nav-item px-1 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="./blogs.html">blogs</a>
+                    </li>
+                    <li class="nav-item px-1 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="./contactUs.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- Modal -->
+    <div class="modal fade mt-5 " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mt-5 ">
+            <div class="modal-content bg-dark">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title text-secondary" id="exampleModalLabel">Enter Keyword</h5>
+                    <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div> -->
+                <div class="modal-body bg-transparent">
+                    <form class="d-flex">
+                        <input class="form-control me-2 py-2 bg-transparent shadow-none border-none text-white"
+                            type="search" placeholder="Search" aria-label="Search">
+                        <button class="border-dark bg-transparent rounded-3" type="submit">
+                            <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
+                        aria-label="Close"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Job Detail-->
+    <div class="container-xxl py-5 mt-5" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center mb-5">
+                        <img class="flex-shrink-0 img-fluid border rounded" src="../images/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                        <div class="text-start ps-4">
+                            <h3 class="mb-3">Marketing Manager</h3>
+                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="mb-3">Job description</h4>
+                        <p>Dolor justo tempor duo ipsum accusam rebum gubergren erat. Elitr stet dolor vero clita labore gubergren. Kasd sed ipsum elitr clita rebum ut sea diam tempor. Sadipscing nonumy vero labore invidunt dolor sed, eirmod dolore amet aliquyam consetetur lorem, amet elitr clita et sed consetetur dolore accusam. Vero kasd nonumy justo rebum stet. Ipsum amet sed lorem sea magna. Rebum vero dolores dolores elitr vero dolores magna, stet sea sadipscing stet et. Est voluptua et sanctus at sanctus erat vero sed sed, amet duo no diam clita rebum duo, accusam tempor takimata clita stet nonumy rebum est invidunt stet, dolor.</p>
+                        <h4 class="mb-3">Responsibility</h4>
+                        <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Dolor justo tempor duo ipsum accusam</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Elitr stet dolor vero clita labore gubergren</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Rebum vero dolores dolores elitr</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Est voluptua et sanctus at sanctus erat</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Diam diam stet erat no est est</li>
+                        </ul>
+                        <h4 class="mb-3">Qualifications</h4>
+                        <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Dolor justo tempor duo ipsum accusam</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Elitr stet dolor vero clita labore gubergren</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Rebum vero dolores dolores elitr</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Est voluptua et sanctus at sanctus erat</li>
+                            <li><i class="fa fa-angle-right text-primary me-2"></i>Diam diam stet erat no est est</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4">
+                    <div class="bg-light rounded p-5 mb-4 ">
+                        <h4 class="mb-4">Job Summery</h4>
+                        <p><i class="fa fa-angle-right text-primary me-2"></i>Published On: 01 Jan, 2045</p>
+                        <p><i class="fa fa-angle-right text-primary me-2"></i>Vacancy: 123 Position</p>
+                        <p><i class="fa fa-angle-right text-primary me-2"></i>Job Nature: Full Time</p>
+                        <p><i class="fa fa-angle-right text-primary me-2"></i>Salary: $123 - $456</p>
+                        <p><i class="fa fa-angle-right text-primary me-2"></i>Location: New York, USA</p>
+                        <p class="m-0"><i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01 Jan, 2045</p>
+                    </div>
+                    <div class="bg-light rounded p-5 wow slideInUp">
+                        <h4 class="mb-4">Company Detail</h4>
+                        <p class="m-0">Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum sadipscing elitr vero dolores. Lorem dolore elitr justo et no gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum lorem diam. Et lorem magna eirmod est et et sanctus et, kasd clita labore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-3 col-lg-8">
+                <h4 class="mb-4">Apply For The Job</h4>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Portfolio Website">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="file" class="form-control bg-white">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="5" placeholder="Coverletter"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-75 " type="submit">Apply Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Job Detail End -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white">Who we are?</a>
+                    <p class="text-white text-muted mt-3 "> ApexHub is where convenience meets career advancement,
+                        offering a seamless blend of shopping and job hunting in one platform.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Jobs
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Shops
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Devkota Sadak, Kathmandu 44600
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            contactapexhub@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +977-9840953995
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex-HUB</title>
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap css -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
@@ -59,7 +57,7 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link text-uppercase text-dark dropdown-toggle"
                                 data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded-3 m-0">
+                            <div class="dropdown-menu rounded-3 m-0 border-light text-center">
                                 <a href="./pages/jobs.html" class="dropdown-item ">Job List</a>
                                 <hr class="dropdown-divider">
                                 <a href="./pages/aShop.html" class="dropdown-item">Product List</a>
@@ -88,18 +86,18 @@
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog mt-5 ">
             <div class="modal-content bg-dark">
-                <div class="modal-header">
+                <!-- <div class="modal-header">
                     <h5 class="modal-title text-secondary" id="exampleModalLabel">Enter Keyword</h5>
-                    <!-- <button type="button" class="btn fs-4" data-bs-dismiss="modal" aria-label="Close"></button> -->
                     <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
                         aria-label="Close"></i>
-                </div>
+                </div> -->
                 <div class="modal-body bg-transparent">
                     <form class="d-flex">
                         <input class="form-control me-2 py-2 bg-transparent shadow-none border-none text-white"
                             type="search" placeholder="Search" aria-label="Search">
-                        <button class="border-none px-3 bg-transparent rounded-3" type="submit">
-                            <i class="fas fa-search text-white"></i></button>
+                        <button class="border-dark bg-transparent rounded-3" type="submit">
+                            <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
+                        aria-label="Close"></i></button>
                     </form>
                 </div>
             </div>
@@ -110,8 +108,8 @@
     <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./images/banner-img-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./images/banner-img-1.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 700px;">
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                         <div class="container">
                             <div class="row justify-content-start">
@@ -120,7 +118,7 @@
                                     <p class="text-capitalize text-dark px-3">ApexHub is not just a job portal, but a
                                         gateway to future
                                         success.</p><br>
-                                    <a href="#"
+                                    <a href="./pages/jobs.html"
                                         class=" py-3 px-5 rounded-pill text-uppercase text-decoration-none main-btn fs-5 text-white">Find
                                         Job</a>
                                 </div>
@@ -128,15 +126,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./images/banner-img-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/banner-img-2.jpg" class="d-block w-100" alt="..." style="height: 700px;">
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h2 class="text-capitalize text-white">best price & offer</h2>
                                     <h1 class="text-uppercase py-2 fw-bold text-white mb-5">new season</h1>
-                                    <a href="#"
+                                    <a href="./pages/aShop.html"
                                         class=" py-3 px-5 rounded-pill text-uppercase text-decoration-none main-btn fs-5 text-white">buy
                                         now</a>
                                 </div>
@@ -145,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -154,7 +152,7 @@
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </header>
     <!-- end of header -->
@@ -756,7 +754,7 @@
                     aria-label="Slide 3" class="bg-secondary"></button>
             </div>
             <div class="carousel-inner w-auto px-5 ms-5">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="5000">
                     <div class="row mb-5">
                         <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch mb-2">
                             <div class="member">
@@ -807,7 +805,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <div class="row mb-5">
                         <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch mb-2 ">
                             <div class="member">
