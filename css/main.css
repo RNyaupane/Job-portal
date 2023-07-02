@@ -306,7 +306,7 @@ footer a:hover{
   /* Login */
 
 /*------------ Login container ------------*/
-#login-body{
+.auth-background{
     background-color: #0000000d;
 }
 .box-area{
