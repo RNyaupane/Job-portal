@@ -4,6 +4,7 @@
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
     --green: #00B074;
+    --text-primary: black;
 }
 body{
     font-family: var(--sm-font);
@@ -64,6 +65,19 @@ body{
 #header{
     /* background: url(../images/banner-img-1.jpg) top/cover no-repeat; */
 }
+.carousel-image,
+.carousel-image1{
+    width: 100%;
+    background-image: url(../images/banner-img-1.jpg);
+    height: 700px;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.carousel-image1{
+    background-image: url(../images/banner-img-2.jpg);
+}
+
+
 .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
@@ -94,6 +108,10 @@ body{
     position: absolute;
     top: 215px;
 }
+.ashop-product-card a{
+    text-decoration: none;
+}
+
 /* Jobs */
 .product-cardd{
     /* box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -6px 20px 0px inset, rgba(0, 0, 0, 0.1) 0px -29px 20px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 0px 0px, rgba(0, 0, 0, 0.09) 0px 0px 0px; */
@@ -231,4 +249,100 @@ footer a:hover{
 #multi-item-example img{
     height: 100px;
     width: 100px;
+}
+
+/* Profile */
+.profile .profile-card img {
+    max-width: 120px;
+  }
+  
+  .profile .profile-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c384e;
+    margin: 10px 0 0 0;
+  }
+  
+  .profile .profile-card h3 {
+    font-size: 18px;
+  }
+  
+  .profile .profile-card .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    color: rgba(1, 41, 112, 0.5);
+    line-height: 0;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .profile .profile-card .social-links a:hover {
+    color: #012970;
+  }
+  
+  .profile .profile-overview .row {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .profile .profile-overview .card-title {
+    color: #012970;
+  }
+  
+  .profile .profile-overview .label {
+    font-weight: 600;
+    color: rgba(1, 41, 112, 0.6);
+  }
+  
+  .profile .profile-edit label {
+    font-weight: 600;
+    color: rgba(1, 41, 112, 0.6);
+  }
+  
+  .profile .profile-edit img {
+    max-width: 120px;
+  }
+
+  /* Login */
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+#user-select-dropdown:hover{
+    background-color: #00B074;
+}
+.form-select option:hover{
+    background-color: #00B074;
+    font-weight: bold;
+}
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
 }
