@@ -306,16 +306,14 @@ footer a:hover{
   /* Login */
 
 /*------------ Login container ------------*/
-
+#login-body{
+    background-color: #0000000d;
+}
 .box-area{
     width: 930px;
 }
-#user-select-dropdown:hover{
-    background-color: #00B074;
-}
-.form-select option:hover{
-    background-color: #00B074;
-    font-weight: bold;
+.featured-image img{
+    height: 450px;
 }
 .right-box{
     padding: 40px 30px 40px 40px;
