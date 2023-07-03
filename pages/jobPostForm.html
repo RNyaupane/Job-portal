@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="../css/main.css">
+    
 </head>
 
 <body>
@@ -112,189 +113,77 @@
             </div>
         </div>
     </div>
-
-    <!-- header -->
-    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="../images/about-us.jpg" class="d-block w-100" alt="..." style="height: 700px;">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start mx-3">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class=" py-2 fw-bold text-dark">Find The Best Jobs <br> That Fit You</h1>
-                                    <p class="text-capitalize text-dark px-3">ApexHub is not just a job portal, but a
-                                        gateway to future
-                                        success.</p><br>
-                                    <a href="#"
-                                        class=" py-3 px-5 rounded-pill text-uppercase text-decoration-none main-btn fs-5 text-white">Find
-                                        Job</a>
-                                </div>
+    
+    <!-- Job Post Form -->
+    <section class="section dashboard ">
+        <div class="row bg-dark  p-3 bg-body rounded mt-4 ">
+            <!-- Job Detail Start -->
+            <div class="container-xxl py-5" data-wow-delay="0.1s">
+                <div class="container bg-light border rounded-5 shadow p-5">
+                    <div class="row gy-5 gx-4 justify-content-center">
+                        <h1 class="mt-3 p-0 text-center">Post a Job</h1>
+                        <hr class="m-2 p-0">
+                        <form class="row g-3 col-lg-10 ">
+                            <div class="col-md-4 ">
+                                <label for="jobTitle" class="form-label ">Job Title <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-6 py-2" id="jobTitle">
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../images/banner-img-2.jpg" class="d-block w-100" alt="..." style="height: 700px;">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h2 class="text-capitalize text-white">best price & offer</h2>
-                                    <h1 class="text-uppercase py-2 fw-bold text-white mb-5">new season</h1>
-                                    <a href="#"
-                                        class=" py-3 px-5 rounded-pill text-uppercase text-decoration-none main-btn fs-5 text-white">buy
-                                        now</a>
-                                </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">No of vacancy <span
+                                        class="text-danger">*</span></label>
+                                <input type="number" class="form-control rounded-6 py-2" id="">
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
-        </div>
-    </header>
-    <!-- end of header -->
-
-
-    <!-- About -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="title text-center pt-3 pb-5">
-                <h2 class="position-relative d-inline-block ms-4">About Us</h2>
-            </div>
-            <div class="container-xxl ">
-                <div class="container">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="row g-0 about-bg rounded overflow-hidden">
-                                <div class="col-6 text-start">
-                                    <img class="img-fluid w-100" src="../images/about-1.jpg">
-                                </div>
-                                <div class="col-6 text-start">
-                                    <img class="img-fluid" src="../images/about-2.jpg" style="width: 100%; height: 80%;">
-                                </div>
-                                <div class="col-6 text-end">
-                                    <img class="img-fluid" src="../images/about-3.jpg" style="width: 85%;">
-                                </div>
-                                <div class="col-6 text-end">
-                                    <img class="img-fluid w-100" src="../images/about-4.jpg">
-                                </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">Job Type <span
+                                        class="text-danger">*</span></label>
+                                <select id="inputState" class="form-select rounded-6 py-2">
+                                    <option selected disabled>Select</option>
+                                    <option>Full time</option>
+                                    <option>Part time</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <h3 class="mb-4">We Help To Get The Best Job And Find A Talent</h3>
-                            <p class="mb-4 text-justify">We offers both e-commerce and a comprehensive job
-                                portal experience. We provide a secure and user-friendly environment for online
-                                shopping,
-                                where buyers and sellers can connect and transact with ease. Additionally, our unique
-                                ACS
-                                department ensures that job postings are verified, and students have access to exclusive
-                                job opportunities.</p>
-                            <p><i class="fa fa-check text-primary me-3"></i>Exclusive Student Placements</p>
-                            <p><i class="fa fa-check text-primary me-3"></i>Seamless Consumer-to-Consumer Payments</p>
-                            <p><i class="fa fa-check text-primary me-3"></i>Verified Job Opportunities</p>
-                        </div>
+                            <div class="col-md-4">
+                                <label for="" class="form-label">Location <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-6 py-2" id="">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="" class="form-label">Salary</label>
+                                <input type="number" class="form-control rounded-6 py-2" id="">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="" class="form-label">Company Logo</label>
+                                <input class="form-control py-2 rounded-6" type="file" id="">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">About The Company</label>
+                                <textarea type="" class="form-control rounded-6" id="" rows="5" placeholder="Enter company details..."></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">About The Job</label>
+                                <textarea type="" class="form-control rounded-6" id="" rows="5" placeholder="Enter job description..."></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">Job Responsibility</label>
+                                <textarea type="" class="form-control rounded-6" id="" rows="5" placeholder="Enter company details..."></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="" class="form-label">Qualification/Skills</label>
+                                <textarea type="" class="form-control rounded-6" id="" rows="5" placeholder="Enter job description..."></textarea>
+                            </div>
+                            
+                            <div class="text-center mt-5">
+                                <button type="submit" class="btn rounded-5">Submit</button>
+                                <button type="reset" class="btn bg-secondary text-white rounded-5 border-secondary">Reset</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+            <!-- End Left side columns -->
         </div>
     </section>
-    <!-- About ends-->
-
-    <!-- Our Team -->
-
-    <section id="team" class="team section-bg ">
-        <div class="container ">
-            <div class="title text-center pt-3 pb-5">
-                <h2 class="position-relative d-inline-block ms-4">Out Team</h2>
-            </div>
-            <div class="row ps-xs-4">
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch shadow-sm  mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="../images/about-1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h5>Roshan&nbsp;Nyaupane</h5>
-                            <span class="text-secondary">Frontend Developer</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-facebook-f fs-5"></i></a>
-                            <a href=""><i class="fab fa-instagram fs-5"></i></a>
-                            <a href=""><i class="fab fa-linkedin fs-5"></i></a>
-                            <a href=""><i class="fab fa-github fs-5"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch shadow-sm  mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="../images/about-4.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h5 class="">Bhawana&nbsp;Shrestha</h5>
-                            <span class="text-secondary">Project Manager</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-facebook-f fs-5"></i></a>
-                            <a href=""><i class="fab fa-instagram fs-5"></i></a>
-                            <a href=""><i class="fab fa-linkedin fs-5"></i></a>
-                            <a href=""><i class="fab fa-github fs-5"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch shadow-sm mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="../images/about-1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h5> Kapil Bhandari</h5>
-                            <span class="text-secondary">Backend Developer</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-facebook-f fs-5"></i></a>
-                            <a href=""><i class="fab fa-instagram fs-5"></i></a>
-                            <a href=""><i class="fab fa-linkedin fs-5"></i></a>
-                            <a href=""><i class="fab fa-github fs-5"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch shadow-sm mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="../images/about-3.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h5>Sabita Shrestha</h5>
-                            <span class="text-secondary">UI/UX Designer</span>
-                        </div>
-                        <div class="social">
-                            <a href=""><i class="fab fa-facebook-f fs-5"></i></a>
-                            <a href=""><i class="fab fa-instagram fs-5"></i></a>
-                            <a href=""><i class="fab fa-linkedin fs-5"></i></a>
-                            <a href=""><i class="fab fa-github fs-5"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our teams Ends -->
+    <!--job post form -->
 
     <!-- newsletter -->
     <section id="newsletter" class="py-5">

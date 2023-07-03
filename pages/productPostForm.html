@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex-HUB</title>
+    <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <div class="container pe-1 ms-1 mw-100">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-flex justify-content-between align-items-start order-lg-0" href="../index.html">
+                <img src="../images/shopping-bag-icon.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2 d-none d-sm-block">Apex-HUB</span>
+            </a>
+            <div class="order-lg-2 nav-btns text-end py-3">
+                <button type="button" class="btn position-relative shadow-none ps-0 " data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <i class="fa fa-search fs-4 "></i>
+                </button>
+                <a type="button" class=" text-dark position-relative shadow-none p-2" href="./notification.html">
+                    <i class="fa fa-bell fs-4"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-circle">2</span>
+                </a>
+                <button type="button" class="btn position-relative px-1 shadow-none">
+                    <a class="nav-link nav-profile d-flex align-items-center dropdown-toggle text-dark" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="dropdownMenuLink">
+                        <img src="https://lh3.googleusercontent.com/ogw/AOLn63G1kDp1EeTErP0dkuwBHG__AgdaHXm4jbaON9IPc0M=s32-c-mo"
+                            alt="Profile" class="rounded-circle" height="40px" width="40px">
+                        <span class="d-none d-lg-block text-dark ps-2">Roshan Nyaupane</span>
+                    </a>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./profile.html"><i class="fa-solid fa-user me-3"></i>Profile</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke me-3"></i>Change Theme</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-gauge me-3"></i>Dashboard</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="./login.html"><i class="fa-solid fa-right-from-bracket me-3"></i>Log Out</a></li>
+                      </ul>
+                </button>
+
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center ">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-1 py-2">
+                        <div class=" dropdown">
+                            <a href="#" class="nav-link text-uppercase text-dark dropdown-toggle"
+                                data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu rounded-3 m-0 border-light text-center">
+                                <a href="./jobs.html" class="dropdown-item ">Job List</a>
+                                <hr class="dropdown-divider">
+                                <a href="./aShop.html" class="dropdown-item">Product List</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item px-1 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="./aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item px-1 py-2 d-lg-none">
+                        <a class="nav-link text-uppercase text-dark" href="./notification.html">Notification</a>
+                    </li>
+                    <li class="nav-item px-1 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="./blogs.html">blogs</a>
+                    </li>
+                    <li class="nav-item px-1 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="./contactUs.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- Modal -->
+    <div class="modal fade mt-5 " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mt-5 ">
+            <div class="modal-content bg-dark">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title text-secondary" id="exampleModalLabel">Enter Keyword</h5>
+                    <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+                </div> -->
+                <div class="modal-body bg-transparent">
+                    <form class="d-flex">
+                        <input class="form-control me-2 py-2 bg-transparent shadow-none border-none text-white"
+                            type="search" placeholder="Search" aria-label="Search">
+                        <button class="border-dark bg-transparent rounded-3" type="submit">
+                            <i class="fa fa-window-close bg-dark text-secondary fs-4" aria-hidden="true" data-bs-dismiss="modal"
+                        aria-label="Close"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header" class=" carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../images/about-us.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                        <div class="container">
+                            <div class="row justify-content-start mx-3">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class=" py-2 fw-bold text-dark">Add Product For Free</h1>
+                                    <p class="text-capitalize text-dark px-3">Introducing our latest addition—a remarkable product available completely free of charge for a limited time.</p><br>
+                                    <a href="../index.html"
+                                        class=" py-3 px-5 rounded-pill text-uppercase text-decoration-none main-btn fs-5 text-white">
+                                        Return to Home</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Job Post Form -->
+    <section class="section dashboard ">
+        <div class="row bg-dark  p-3 bg-body rounded mt-4 ">
+            <!-- Job Detail Start -->
+            <div class="container-xxl py-5" data-wow-delay="0.1s">
+                <div class="container bg-light rounded-5 border shadow p-5 w-50">
+                    
+                    <div class="row gy-5 gx-4 justify-content-center">
+                        <h1 class="mt-3 p-0 text-center">Add Product</h1>
+                        <hr class="m-2 p-0">
+                        <form class="row g-3 col-lg-10 justify-content-center">
+                            <div class="col-md-10 ">
+                                <label class="form-label ">Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-6 py-2" >
+                            </div>
+                            <div class="col-md-10 ">
+                                <label class="form-label ">Author <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control rounded-6 py-2">
+                            </div>
+                            <div class="col-md-10">
+                                <label class="form-label"> Select Category<span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select rounded-6 py-2">
+                                    <option selected disabled>Select</option>
+                                    <option>Full time</option>
+                                    <option>Part time</option>
+                                </select>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="" class="form-label">Choose Photo</label>
+                                <input class="form-control py-2 rounded-6" type="file" id="">
+                            </div>
+                            <div class="col-md-10">
+                                <label for="" class="form-label">Description</label>
+                                <textarea type="" class="form-control rounded-6" id="" rows="5" placeholder="Enter company details..."></textarea>
+                            </div>                            
+                            <div class="text-center mt-5">
+                                <button type="submit" class="btn rounded-5 me-3">Submit</button>
+                                <button type="reset" class="btn bg-secondary text-white rounded-5 border-secondary">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Left side columns -->
+        </div>
+    </section>
+    <!--job post form -->
+
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Join the Bunch</h2>
+                </div>
+
+                <p class="text-center text-muted">Embrace the extraordinary. Join us on a journey beyond imagination.
+                </p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Email ...">
+                    <button class="btn btn-primary shadow-none" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Who we are?</a>
+                    <p class="text-white text-muted mt-3 "> ApexHub is where convenience meets career advancement,
+                        offering a seamless blend of shopping and job hunting in one platform.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Jobs
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Shops
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Devkota Sadak, Kathmandu 44600
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            contactapexhub@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +977-9840953995
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

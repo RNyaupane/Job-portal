@@ -19,7 +19,7 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <div class="container ">
+        <div class="container pe-1 ms-1 mw-100">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,22 +28,31 @@
                 <span class="text-uppercase fw-lighter ms-2 d-none d-sm-block">Apex-HUB</span>
             </a>
             <div class="order-lg-2 nav-btns text-end py-3">
-                <button type="button" class="btn position-relative shadow-none" data-bs-toggle="modal"
+                <button type="button" class="btn position-relative shadow-none ps-0 " data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
                     <i class="fa fa-search fs-4 "></i>
                 </button>
-                <a type="button" class=" text-dark position-relative d-none d-lg-inline shadow-none" href="./notification.html">
-                    <i class="fa fa-bell fs-4 "></i>
+                <a type="button" class=" text-dark position-relative shadow-none p-2" href="./notification.html">
+                    <i class="fa fa-bell fs-4"></i>
                     <span
                         class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-circle">2</span>
                 </a>
-                <button type="button" class="btn position-relative ">
-                    <a class="nav-link nav-profile d-flex align-items-center pe-0 show" href="./profile.html"
-                        data-bs-toggle="dropdown" aria-expanded="true">
+                <button type="button" class="btn position-relative px-1 shadow-none">
+                    <a class="nav-link nav-profile d-flex align-items-center dropdown-toggle text-dark" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="dropdownMenuLink">
                         <img src="https://lh3.googleusercontent.com/ogw/AOLn63G1kDp1EeTErP0dkuwBHG__AgdaHXm4jbaON9IPc0M=s32-c-mo"
                             alt="Profile" class="rounded-circle" height="40px" width="40px">
-                        <span class="d-none d-md-block text-dark ps-2">Roshan Nyaupane</span>
+                        <span class="d-none d-lg-block text-dark ps-2">Roshan Nyaupane</span>
                     </a>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./profile.html"><i class="fa-solid fa-user me-3"></i>Profile</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke me-3"></i>Change Theme</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-gauge me-3"></i>Dashboard</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="./login.html"><i class="fa-solid fa-right-from-bracket me-3"></i>Log Out</a></li>
+                      </ul>
                 </button>
 
             </div>
@@ -54,10 +63,10 @@
                         <a class="nav-link text-uppercase text-dark" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item px-1 py-2">
-                        <div class="nav-item dropdown">
+                        <div class=" dropdown">
                             <a href="#" class="nav-link text-uppercase text-dark dropdown-toggle"
                                 data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded-3 m-0">
+                            <div class="dropdown-menu rounded-3 m-0 border-light text-center">
                                 <a href="./jobs.html" class="dropdown-item ">Job List</a>
                                 <hr class="dropdown-divider">
                                 <a href="./aShop.html" class="dropdown-item">Product List</a>
