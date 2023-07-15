@@ -30,14 +30,14 @@
             <div class="order-lg-2 nav-btns text-end py-3">
                 <button type="button" class="btn position-relative shadow-none ps-0 " data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
-                    <i class="fa fa-search fs-4 "></i>
+                    <i class="fa fa-search fs-5 "></i>
                 </button>
-                <a type="button" class=" text-dark position-relative shadow-none p-2" href="./pages/notification.html">
+                <a type="button" class=" text-dark position-relative shadow-none p-1 " href="./pages/notification.html">
                     <i class="fa fa-bell fs-4"></i>
                     <span
                         class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-circle">2</span>
                 </a>
-                <button type="button" class="btn position-relative px-1 shadow-none">
+                <button type="button" class="btn position-relative px-1 py-0 shadow-none">
                     <a class="nav-link nav-profile d-flex align-items-center dropdown-toggle text-dark" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="dropdownMenuLink">
                         <img src="https://lh3.googleusercontent.com/ogw/AOLn63G1kDp1EeTErP0dkuwBHG__AgdaHXm4jbaON9IPc0M=s32-c-mo"
                             alt="Profile" class="rounded-circle" height="40px" width="40px">
@@ -49,7 +49,7 @@
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke me-3"></i>Change Theme</a></li>
                         <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-gauge me-3"></i>Dashboard</a></li>
+                        <li><a class="dropdown-item" href="./pages/dashHome.html"><i class="fa-solid fa-gauge me-3"></i>Dashboard</a></li>
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="./pages/login.html"><i class="fa-solid fa-right-from-bracket me-3"></i>Log Out</a></li>
                       </ul>
@@ -178,239 +178,197 @@
                 <h2 class="position-relative d-inline-block">Hot Sales</h2>
             </div>
             <div class="d-flex flex-wrap justify-content-center my-3 filter-button-group">
-                <!-- <button type="button" class="btn m-2  active-filter-btn" data-filter="*">All</button>
-                <button type="button" class="btn m-2 " data-filter="">Best Sellers</button>
-                <button type="button" class="btn m-2 " data-filter="">Featured</button>
-                <button type="button" class="btn m-2 " data-filter="">New Arrival</button> -->
             </div>
-            <div class="row">
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
-                            data-mdb-ripple-color="light">
-                            <a href="#!">
-                                <img src="./images/book1.jpg" class="w-100" style="height: 250px;" />
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge"><span class="badge bg-primary ms-2">New</span></h5>
+            <div id="product-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="card border-white product-cardd">
+                                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
+                                        data-mdb-ripple-color="light">
+            
+                                        <a href="#!">
+                                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
+                                                </div>
+                                            </div>
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="" class="text-reset">
+                                            <h5 class="card-title mb-3">Java</h5>
+                                        </a>
+                                        <a href="" class="text-reset text-decoration-none">
+                                            <p>(Category)</p>
+                                        </a>
+                                        <h6 class="mb-3 fw-bold">$61.99</h6>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="card border-white product-cardd">
+                                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
+                                        data-mdb-ripple-color="light">
+            
+                                        <a href="#!">
+                                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
+                                                </div>
+                                            </div>
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="" class="text-reset">
+                                            <h5 class="card-title mb-3">Java</h5>
+                                        </a>
+                                        <a href="" class="text-reset text-decoration-none">
+                                            <p>(Category)</p>
+                                        </a>
+                                        <h6 class="mb-3 fw-bold">$61.99</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="card border-white product-cardd">
+                                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
+                                        data-mdb-ripple-color="light">
+            
+                                        <a href="#!">
+                                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
+                                                </div>
+                                            </div>
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="" class="text-reset">
+                                            <h5 class="card-title mb-3">Java</h5>
+                                        </a>
+                                        <a href="" class="text-reset text-decoration-none">
+                                            <p>(Category)</p>
+                                        </a>
+                                        <h6 class="mb-3 fw-bold">$61.99</h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="card border-white product-cardd">
+                                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
+                                        data-mdb-ripple-color="light">
+            
+                                        <a href="#!">
+                                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
+                                                </div>
+                                            </div>
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="" class="text-reset">
+                                            <h5 class="card-title mb-3">Java</h5>
+                                        </a>
+                                        <a href="" class="text-reset text-decoration-none">
+                                            <p>(Category)</p>
+                                        </a>
+                                        <h6 class="mb-3 fw-bold">$61.99</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="card border-white product-cardd">
+                                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
+                                        data-mdb-ripple-color="light">
+            
+                                        <a href="#!">
+                                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
+                                                </div>
+                                            </div>
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="" class="text-reset">
+                                            <h5 class="card-title mb-3">Java</h5>
+                                        </a>
+                                        <a href="" class="text-reset text-decoration-none">
+                                            <p>(Category)</p>
+                                        </a>
+                                        <h6 class="mb-3 fw-bold">$61.99</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="card border-white product-cardd">
+                                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light p-2"
+                                        data-mdb-ripple-color="light">
+            
+                                        <a href="#!">
+                                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
+                                                </div>
+                                            </div>
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="" class="text-reset">
+                                            <h5 class="card-title mb-3">Java</h5>
+                                        </a>
+                                        <a href="" class="text-reset text-decoration-none">
+                                            <p>(Category)</p>
+                                        </a>
+                                        <h6 class="mb-3 fw-bold">$61.99</h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-                            <a href="#!">
-                                <div class="mask">
-                                    <img src="./images/book2.jpg" class="w-100" style="height: 250px;" />
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-                            <a href="#!">
-                                <img src="./images/book3.jpg" class="w-100" style="height: 250px;" />
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge"><span class="badge bg-primary ms-2">New</span></h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-
-                            <a href="#!">
-                                <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge"><span class="badge bg-success ms-2">Eco</span></h5>
-                                    </div>
-                                </div>
-                                <div class="hover-overlay">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Java</h5>
-                            </a>
-                            <a href="" class="text-reset text-decoration-none">
-                                <p>(Category)</p>
-                            </a>
-                            <h6 class="mb-3 fw-bold">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-                            <img src="./images/book5.jpg" class="w-100" style="height: 250px;" />
-                            <a href="#!">
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge"><span class="badge bg-primary ms-2">New</span></h5>
-                                    </div>
-                                </div>
-                                <div class="hover-overlay">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-                            <img src="./images/book1.jpg" class="w-100" style="height: 250px;" />
-                            <a href="#!">
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge">
-                                            <span class="badge bg-success ms-2">Eco</span>
-                                            <span class="badge bg-danger ms-2">-10%</span>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="hover-overlay">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-                            <img src="./images/book4.jpg" class="w-100" style="height: 250px;" />
-                            <a href="#!">
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge">
-                                            <span class="badge bg-success ms-2">Eco</span>
-                                            <span class="badge bg-danger ms-2">-10%</span>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="hover-overlay">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card border-white product-cardd">
-                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                            data-mdb-ripple-color="light">
-                            <img src="./images/book3.jpg" class="w-100" style="height: 250px;" />
-                            <a href="#!">
-                                <div class="mask">
-                                    <div class="d-flex justify-content-start align-items-end h-100">
-                                        <h5 class="product-badge">
-                                            <span class="badge bg-success ms-2">Eco</span>
-                                            <span class="badge bg-danger ms-2">-10%</span>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="hover-overlay">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="text-reset">
-                                <h5 class="card-title mb-3">Product name</h5>
-                            </a>
-                            <a href="" class="text-reset">
-                                <p>Category</p>
-                            </a>
-                            <h6 class="mb-3">$61.99</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <a class="rounded-pill text-white text-decoration-none  py-3 px-5 main-btn"
-                        href="./pages/aShop.html">Browse
-                        More products</a>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text-center mt-5">
+                <a class="rounded-pill text-white text-decoration-none py-3 px-5 main-btn" href="./pages/aShop.html">Browse More products</a>
             </div>
         </div>
     </section>
@@ -673,86 +631,6 @@
     </section>
     <!-- Services -->
 
-    <!-- <section id="team" class="team section-bg">
-        <div class="container">
-            <div class="title text-center pt-3 pb-5">
-                <h2 class="position-relative d-inline-block ms-4">Out Team</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch   mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="./images/about-1.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h4>Bhawana Shrestha</h4>
-                            <span class="text-secondary">Project Manager</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch mb-2 ">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="./images/about-4.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h4>Bhawana Shrestha</h4>
-                            <span class="text-secondary">Project Manager</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="./images/about-1.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h4>Bhawana Shrestha</h4>
-                            <span class="text-secondary">Project Manager</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 col-md-5 d-flex align-items-stretch mb-2">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="./images/about-3.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info px-3 my-4 text-center">
-                            <h4>Bhawana Shrestha</h4>
-                            <span class="text-secondary">Project Manager</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section class="team section-bg">
         <div class="title text-center pt-3 pb-5">
@@ -871,16 +749,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
         </div>
     </section>
 
